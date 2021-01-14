@@ -1,0 +1,790 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><title>STM32F2xx Standard Peripherals Library: Peripheral&#8217;s examples</title><link rel="themeData" href="Library_Examples_files/themedata.thmx"><link rel="colorSchemeMapping" href="Library_Examples_files/colorschememapping.xml"><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	border:solid windowtext 1.0pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;
+	mso-border-shadow:yes;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:507477268;
+	mso-list-template-ids:-1687123716;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:744570268;
+	mso-list-template-ids:-2061997898;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:973752690;
+	mso-list-template-ids:-896793898;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1199121769;
+	mso-list-template-ids:-1140314876;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1467893214;
+	mso-list-template-ids:-1454617350;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1582368998;
+	mso-list-template-ids:987293954;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><meta content="MCD Application Team" name="author"><!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>STMicroelectronics</o:Author>
+  <o:LastAuthor>ghannouc</o:LastAuthor>
+  <o:Revision>14</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
+  <o:Created>2010-04-21T19:58:00Z</o:Created>
+  <o:LastSaved>2011-04-18T13:38:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>2444</o:Words>
+  <o:Characters>13931</o:Characters>
+  <o:Company>STMicroelectronics</o:Company>
+  <o:Lines>116</o:Lines>
+  <o:Paragraphs>32</o:Paragraphs>
+  <o:CharactersWithSpaces>16343</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr>  <u1:mathPr>
+   <u1:mathFont u1:val="Cambria Math"/>
+   <u1:brkBin u1:val="before"/>
+   <u1:brkBinSub u1:val="--"/>
+   <u1:smallFrac u1:val="off"/>
+   <u1:dispDef/>
+   <u1:lMargin u1:val="0"/>
+   <u1:rMargin u1:val="0"/>
+   <u1:defJc u1:val="centerGroup"/>
+   <u1:wrapIndent u1:val="1440"/>
+   <u1:intLim u1:val="subSup"/>
+   <u1:naryLim u1:val="undOvr"/>
+  </u1:mathPr>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="33794"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></head>
+<body lang="EN-US" link="blue" vlink="blue">
+
+<div class="WordSection1">
+
+<p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" style="width: 796.5pt;" border="0" cellpadding="0" cellspacing="0" width="1062">
+ <tbody><tr style="">
+  <td style="padding: 0in; width: 715.5pt;" valign="top" width="954">
+  <table class="MsoNormalTable" style="width: 631.5pt;" border="0" cellpadding="0" cellspacing="0" width="842">
+   <tbody><tr style="">
+    <td style="padding: 1.5pt;">
+    <p class="MsoNormal" style="text-align: center;" align="center"><strong><span style="font-size: 18pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(51, 102, 255);">STM32 Cryptographic Library:&nbsp;</span></strong><strong><span style="font-size: 18pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(51, 102, 255);">Cryptographic</span></strong><strong><span style="font-size: 18pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(51, 102, 255);"><i>&#8217;s examples</i></span></strong><strong><span style="font-size: 18pt; color: rgb(51, 102, 255);"><o:p></o:p></span></strong></p>
+    <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Copyright 2013
+    STMicroelectronics<o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><img style="width: 171px; height: 126px;" alt="" id="_x0000_i1025" src="../../_htmresc/st_logo.png"></span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </tbody></table>
+  <p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; display: none;"><o:p>&nbsp;</o:p></span></p>
+  <table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" width="900">
+   <tbody><tr style="">
+    <td style="padding: 0in;" valign="top">
+    <table class="MsoNormalTable" style="width: 790.5pt;" border="0" cellpadding="0" cellspacing="5" width="1054">
+     <tbody><tr style="height: 31.5pt;">
+      <td style="padding: 0in; width: 842pt; height: 31.5pt;" valign="top" width="1123">
+      <table class="MsoNormalTable" style="width: 620.25pt;" border="0" cellpadding="0" cellspacing="0" width="827">
+       <tbody><tr style="">
+        <td style="padding: 1.5pt; width: 827.7pt;" width="1104">
+        <p style="margin-bottom: 12pt; text-align: justify;"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">STM32
+Cryptographic Library provides a rich set of examples covering the main
+features of each cryptographic algorithm. All the examples are
+independent from the software toolchain and&nbsp;evaluation board.
+Examples are available in source file format and user can tailor the
+provided&nbsp;project template to run the selected example with his
+preferred toolchain and device.</span><o:p></o:p></p>
+        <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;"><span style="font-size: 12pt; color: white;">How to proceed?</span></h2>
+        
+                        <ul>
+                          <li><span style="font-size: 10pt; font-family: Symbol;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Copy the files <b>main.c</b>, <b>readme.txt</b> from the specified
+        example to your device tempate folder under: <b>&nbsp; &nbsp; &nbsp;</b></span></li><ul><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F0xx_Cryptographic_Templates</b>.
+        This project folder </span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">already </span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">contains&nbsp;all toolchain files needed for
+        creating projects for STM32F0xx microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F37x_Cryptographic_Template</b>s.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32F37x/38x microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F30x_Cryptographic_Templates</b>.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32F30x/31x microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F4xx_Cryptographic_Templates</b>.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32F40/41x microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F2xx_Cryptographic_Template</b>s.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32F2xx microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32F10x_Cryptographic_Template</b>s.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32F10x microcontrollers.</span></li><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><b>Project\STM32L1xx_Cryptographic_Template</b>s.
+        This project folder contains already all toolchain files needed for
+        creating projects for STM32L1xx microcontrollers.</span></li></ul>
+                          <li><span style="font-size: 10pt; font-family: Symbol;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Open your preferred toolchain</span></li><ul><li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">In the workspace toolbar select the project config<br></span></li></ul>
+                          
+                          <li><span style="font-size: 10pt; font-family: Symbol;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Rebuild all files and load your image
+        into target memory</span><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></li>
+                          <li><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Run the example</span><o:p></o:p></li>
+                        </ul>
+
+        
+        
+        
+        
+        <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;"><span class="GramE"><span style="font-size: 12pt; color: white;">STM32 Cryptographic Library</span></span><span style="font-size: 12pt; color: white;">&nbsp;Examples</span></h2>
+        <p><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">The package
+        contains the following examples:</span></p>
+        
+        <p style="text-align: center;"><font size="+2"><o:p>&nbsp;<small><a href="#AES">AES</a> - <a href="#ARC4">ARC4</a></small></o:p></font><font size="+2"><small><a href="#ARC4"> </a>- <a href="#ECC">ECC</a> </small></font><font size="+2"><small>- </small></font><a href="#HASH"><small><font size="+2"><small>HASH</small></font></small></a><font size="+2"><small><small> </small>- <a href="#RAND">RAND</a></small></font><font size="+2"><small> - <a href="#RSA">RSA</a> </small></font><font size="+2"><small>- <a href="#TDES_DES">TDES_DES</a></small></font></p>
+        <div align="center">
+        <table class="MsoNormalTable" style="border: medium none ; margin-left: 4.65pt; border-collapse: collapse; width: 753px; height: 1155px; background-color: rgb(149, 179, 215);" border="1" cellpadding="0" cellspacing="0">
+         <tbody><tr style="height: 16.5pt;">
+          <td rowspan="2" style="border: 1pt solid white; padding: 0in 5.4pt; background: rgb(102, 102, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 16.5pt; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-align: center;" align="center"><b><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; color: white;">Cryptographic <o:p></o:p></span></b></p>
+          </td>
+          <td colspan="2" style="border-style: solid solid solid none; border-color: -moz-use-text-color windowtext; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(102, 102, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 460pt; height: 16.5pt;" nowrap="nowrap" width="613">
+          <p class="MsoNormal" style="text-align: center;" align="center"><b><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; color: white;">Example<o:p></o:p></span></b></p>
+          </td>
+         </tr>
+         <tr style="height: 32.25pt;">
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(102, 102, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 32.25pt;" width="251">
+          <p class="MsoNormal" style="text-align: center;" align="center"><b><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; color: white;">Name<o:p></o:p></span></b></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(102, 102, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 32.25pt;" width="363">
+          <p class="MsoNormal" style="text-align: center;" align="center"><b><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; color: white;">&nbsp;Brief description<o:p></o:p></span></b></p>
+          </td>
+         </tr>
+         <tr style="height: 60pt;">
+          <td colspan="1" rowspan="3" style="border-style: none solid solid; border-color: -moz-use-text-color -moz-use-text-color black rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 60pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp;<a href="AES">AES</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 60pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">AES128_CTR<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 60pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example describes how to use the STM32 Cryptographic Library AES-128 algorithm to:<br></span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp; - Encrypt DATA with AES-128 in CTR&nbsp; mode<br>&nbsp; &nbsp; - Decrypt DATA with AES-128 in CTR mode</span></p>
+          </td>
+         </tr>
+         <tr style="height: 60pt;">
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 60pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">AES192_CBC<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 60pt;" width="363"><p style="text-align: justify;" class="MsoNormal"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example describes how to use the STM32 Cryptographic Library AES-192 algorithm to</span></p><p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp; - Encrypt DATA with AES-192 in CBC&nbsp; mode<br>&nbsp; &nbsp; -&nbsp;Decrypt DATA with AES-192 in CBC&nbsp;mode<o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         
+         
+         <tr><td style="background-color: rgb(149, 179, 215); text-align: left;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; AES256_ECB</span></td><td style="background-color: rgb(149, 179, 215);"><div style="text-align: justify;"><div style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example describes how to use the STM32 </span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp;Cryptographic</span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp;Library AES-256 algorithm to :</span><br></div><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"></span></div><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp; &nbsp; - Encrypt DATA with AES-256 in ECB mode,<br>&nbsp; &nbsp; &nbsp; - Decrypt DATA with AES-256 in ECB mode&nbsp;</span></td></tr><tr style="height: 30pt;">
+          <td rowspan="1" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext black rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 30pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="ARC4">ARC4</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 30pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">Encryption_Decryption<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 30pt;" width="363"><p style="text-align: justify;" class="MsoNormal"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This example describes how to use the STM32 Cryptographic Library ARC4
+algorithm to Encrypt and Decrypt DATA using ARC4 algorithm<o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         <tr style="height: 45pt;">
+          <td colspan="1" rowspan="2" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext black rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 45pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="ECC">ECC</a></span></p><p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 45pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">ECC_KeyGeneration_SignatureVerification<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 45pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This
+example describes how to use the STM32 Cryptographic Library ECC
+algorithm of an ECC key generation and signature
+verification with Parameters for Elliptic Curve: P-192, P-256 and P-384. <o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         
+         
+         <tr><td style="text-align: left;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;ECC_SignatureVerification</span></td><td style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">&nbsp;This example describes how to use the STM32 &nbsp; &nbsp;Cryptographic Library
+ECC algorithm&nbsp;of an ECC signature &nbsp;verification with
+Parameters for Elliptic CurveP-192, &nbsp; &nbsp; &nbsp; &nbsp;P-256 and P-384. </span></td></tr><tr style="height: 45pt;">
+          <td rowspan="3" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext black rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 45pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="HASH">HASH</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 45pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">HMAC_SHA1<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 45pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example
+describes how to use the STM32 Cryptographic Library SHA1 Hash
+algorithm of an HMAC-SHA1 calculation.</span></p><p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">The SHA1 Hash algorithm is used to generate 20 bytes (CRL_SHA1_SIZE) HMAC digest of input message.</span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+          </td>
+         </tr>
+         <tr style="height: 75pt;">
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 75pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">MD5<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 75pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This example describes how to use the STM32 Cryptographic Library MD5 Hash algorithm to generate message digest.<br>The MD5 Hash algorithm is configured to generate 16 bytes hash digest (CRL_MD5_SIZE) and in default mode (E_HASH_DEFAULT).<o:p></o:p></span></p>
+          </td>
+         </tr>
+         <tr style="height: 60pt;">
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 60pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">SHA256<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 60pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This example describes how to use the STM32 Cryptographic Library SHA-256 Hash&nbsp; algorithm to generate message digest. <br>The
+SHA-256 Hash algorithm is configured to generate 32 bytes hash digest
+(CRL_SHA256_SIZE) and in default mode (E_HASH_DEFAULT).<o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         
+         <tr style="height: 45.75pt;">
+          <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 45.75pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="RAND">RAND</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 45.75pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">Random_NumberGenerator<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 45.75pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example
+describes how to use the STM32 Cryptographic Library Random
+number&nbsp; generator algorithm to generate an array filled with
+random bytes. <o:p></o:p></span></p>
+          </td>
+         </tr>
+         <tr style="height: 45.75pt;">
+          <td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 45.75pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="RSA">RSA</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 45.75pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">RSA_Signature<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(0, 176, 240) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 45.75pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example describes how to use the STM32 Cryptographic Library RSA algorithm to:<br>&nbsp;- Generate RSA signature of a message digest using private key. <br>&nbsp;- Verify RSA signature validity of message digest using public key.<o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         <tr style="height: 30pt;">
+          <td rowspan="2" style="border-style: none solid solid; border-color: -moz-use-text-color windowtext black rgb(21, 5, 225); border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 30pt; font-weight: bold; width: 77pt;" width="103">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"><a href="TDES_DES">TDES_DES</a><o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 30pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">DES_CBC<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 30pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example
+describes how to use the STM32 Cryptographic Library DES algorithm to
+first&nbsp;encrypt Data in CBC mode, then decrypt Data.<o:p></o:p></span></p>
+          </td>
+         </tr>
+         <tr style="height: 45.75pt;">
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 188pt; height: 45.75pt;" width="251">
+          <p class="MsoNormal" style="text-indent: 11.05pt;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">TDES_ECB<o:p></o:p></span></p>
+          </td>
+          <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(21, 5, 225) windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(149, 179, 215) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 272pt; height: 45.75pt;" width="363">
+          <p class="MsoNormal" style="text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">This&nbsp;example
+describes how to use the STM32 Cryptographic Library TDES algorithm to
+first&nbsp; encrypt Data in ECB mode, then decrypt Data</span><span style="font-size: 11pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;">.<o:p></o:p></span></p>
+          </td>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        </tbody></table>
+        </div>
+        <p class="MsoNormal" style="text-align: right;" align="right"><span style="font-size: 7.5pt;"><a href="Library_Examples.html">Back to Top</a></span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+        </td>
+       </tr>
+      </tbody></table>
+      <p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; display: none;"><o:p>&nbsp;</o:p></span></p>
+      <table class="MsoNormalTable" style="width: 96.22%; top: 1547px;" border="0" cellpadding="0" cellspacing="5" width="96%">
+       <tbody><tr style="">
+        <td style="border-style: solid none none; border-color: -moz-use-text-color; border-width: 1pt medium medium; padding: 0in; width: 98.84%;" width="98%">
+        <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+        <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">For complete
+        documentation on STM32(CORTEX M3) 32-bit Microcontrollers platform
+        visit&nbsp;<span style="color: blue;"><a href="http://www.st.com/stm32" target="_blank">www.st.com/STM32</a></span><o:p></o:p></span></p>
+        </td>
+       </tr>
+      </tbody></table>
+      <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  <p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body></html>

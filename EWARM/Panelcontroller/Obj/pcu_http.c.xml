@@ -1,0 +1,3198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source name="pcu_http.c" location="d:\github\netscale_72_sw_panelcontroller\src" is_link="no">
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>155</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RDP_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>156</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_KEY1&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>157</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_KEY2&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>158</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_OPT_KEY1&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>159</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_OPT_KEY2&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h</file>
+  <method>FreeRTOS_round_up</method>
+  <lineNo>182</lineNo>
+  <column>104</column>
+  <checkName>ATH-div-0-unchk-param,CERT-INT33-C_h</checkName>
+  <message>Parameter `d&apos; is not checked against 0 before it is used as a divisor</message>
+  <trace>
+   <traceBlock line="182" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h" method="FreeRTOS_round_up">
+    <traceLine line="182" text="non_float_cast_divide" type="!"/>
+    <traceLine line="182" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h</file>
+  <method>FreeRTOS_round_down</method>
+  <lineNo>183</lineNo>
+  <column>91</column>
+  <checkName>ATH-div-0-unchk-param,CERT-INT33-C_h</checkName>
+  <message>Parameter `d&apos; is not checked against 0 before it is used as a divisor</message>
+  <trace>
+   <traceBlock line="183" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h" method="FreeRTOS_round_down">
+    <traceLine line="183" text="non_float_cast_divide" type="!"/>
+    <traceLine line="183" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method/>
+  <lineNo>193</lineNo>
+  <column>15</column>
+  <checkName>CERT-EXP46-C</checkName>
+  <message>Bitwise operator applied to boolean expression `(uxLeft&lt;uxTail)&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method/>
+  <lineNo>193</lineNo>
+  <column>38</column>
+  <checkName>CERT-EXP46-C</checkName>
+  <message>Bitwise operator applied to boolean expression `(uxRight&lt;uxTail)&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method>uxStreamBufferGetPtr</method>
+  <lineNo>225</lineNo>
+  <column>32</column>
+  <checkName>CERT-ARR30-C_g</checkName>
+  <message>Array pointer formed by `pxBuffer-&gt;ucArray+uxNextTail&apos; could be out-of-bound</message>
+  <trace>
+   <traceBlock line="225" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h" method="uxStreamBufferGetPtr">
+    <traceLine line="225" text="CERT-ARR30-C_g" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>269</lineNo>
+  <column>4</column>
+  <checkName>CERT-EXP19-C</checkName>
+  <message>Missing braces</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>289</lineNo>
+  <column>7</column>
+  <checkName>CERT-EXP19-C</checkName>
+  <message>Missing braces</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>322</lineNo>
+  <column>16</column>
+  <checkName>CERT-EXP36-C_b</checkName>
+  <message>Conversion from a void pointer to an object pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>323</lineNo>
+  <column>17</column>
+  <checkName>CERT-EXP36-C_b</checkName>
+  <message>Conversion from a void pointer to an object pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>339</lineNo>
+  <column>56</column>
+  <checkName>CERT-EXP34-C_b</checkName>
+  <message>Indirect dereference of `pucRxBuffer&apos; which may be NULL</message>
+  <trace>
+   <traceBlock line="322" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="322" text="Possible assignment to NULL: pucRxBuffer = (unsigned_char *)pvPortMalloc(ipconfigTCP_MSS)" type="!"/>
+    <traceLine line="322" text="Entering into pvPortMalloc" type="&gt;"/>
+   </traceBlock>
+   <traceBlock line="116" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos\source\portable\memmang\heap_4.c" method="pvPortMalloc">
+    <traceLine line="116" text="Pointer possibly assigned NULL: pvReturn = _NULL" type="!"/>
+    <traceLine line="122" text="if (pxEnd==_NULL) is false" type="^"/>
+    <traceLine line="135" text="if ((xWantedSize&amp;xBlockAllocatedBit)==0) is true" type="^"/>
+    <traceLine line="139" text="if (xWantedSize&gt;0) is true" type="^"/>
+    <traceLine line="145" text="if ((xWantedSize&amp;portBYTE_ALIGNMENT_MASK)!=0x0) is true" type="^"/>
+    <traceLine line="161" text="if ((xWantedSize&gt;0) &amp;&amp; (xWantedSize&lt;=xFreeBytesRemaining)) is false" type="^"/>
+    <traceLine line="259" text="gisl_return" type="!"/>
+   </traceBlock>
+   <traceBlock line="322" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="322" text="Exiting from pvPortMalloc" type="&lt;"/>
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="339" text="Dereference of pointer `pucRxBuffer&apos;" type="!"/>
+    <traceLine line="339" text="Entering into FreeRTOS_recv" type="&gt;"/>
+   </traceBlock>
+   <traceBlock line="2213" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\FreeRTOS_Sockets.c" method="FreeRTOS_recv">
+    <traceLine line="2213" text="if (prvValidSocket(pxSocket, FREERTOS_IPPROTO_TCP, pdTRUE)==pdFALSE) is false" type="^"/>
+    <traceLine line="2219" text="if (pxSocket-&gt;u.xTCP.rxStream!=_NULL) is false" type="^"/>
+    <traceLine line="2228" text="while (xByteCount==0) is false" type="^"/>
+    <traceLine line="2327" text="if (xByteCount&gt;0) is true" type="^"/>
+    <traceLine line="2329" text="if ((xFlags&amp;FREERTOS_ZERO_COPY)==0) is false" type="^"/>
+    <traceLine line="2350" text="deref_no_check" type="!"/>
+    <traceLine line="2350" text="Entering into uxStreamBufferGetPtr" type="&gt;"/>
+   </traceBlock>
+   <traceBlock line="225" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h" method="uxStreamBufferGetPtr">
+    <traceLine line="225" text="deref_no_check" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>350</lineNo>
+  <column>23</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `pucRxBuffer&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4))" type="^"/>
+    <traceLine line="350" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>354</lineNo>
+  <column>19</column>
+  <checkName>CERT-EXP36-C_b</checkName>
+  <message>Conversion from a void pointer to an object pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>354</lineNo>
+  <column>26</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `sp1&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="354" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>354</lineNo>
+  <column>19</column>
+  <checkName>CERT-ERR33-C_a</checkName>
+  <message>Calling standard library function `memchr&apos; without detecting and handling errors</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="354" text="Calling standard library function `memchr&apos; " type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>355</lineNo>
+  <column>27</column>
+  <checkName>CERT-ARR36-C_a</checkName>
+  <message>Pointer subtraction `sp2-sp1&apos; is between two pointers addressing different buffers</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>355</lineNo>
+  <column>27</column>
+  <checkName>CERT-ARR30-C_j</checkName>
+  <message>The result of pointer arithmetic on possibly null pointer `sp2&apos; could be undefined</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="354" text="Return value of `memchr(sp1, &apos; &apos;, max_uri_len)&apos; could be NULL" type="!"/>
+    <traceLine line="355" text="Pointer arithmetic `sp2-sp1&apos; on possibly null pointer `sp2&apos;" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>356</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `memset&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="356" text="Calling standard library function `memset&apos; " type="!"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is true" type="^"/>
+    <traceLine line="630" text="for (;i&lt;NR_OF_SBLINKS;i++) is false" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is false" type="^"/>
+    <traceLine line="1104" text="if (lengthOfbytes==0) is false" type="^"/>
+    <traceLine line="1108" text="if (lengthOfbytes==pdFREERTOS_ERRNO_ENOMEM) is false" type="^"/>
+    <traceLine line="1115" text="if (lengthOfbytes==pdFREERTOS_ERRNO_ENOTCONN) is true" type="^"/>
+    <traceLine line="1120" text="break" type=" "/>
+    <traceLine line="1152" text="if (FreeRTOS_recv(xConnectedSocket, pucRxBuffer, ipconfigTCP_MSS, 0)&lt;0) is true" type="^"/>
+    <traceLine line="1155" text="break" type=" "/>
+    <traceLine line="1165" text="if (pcuRestartFlag!=0) is true" type="^"/>
+    <traceLine line="1168" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>357</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `memcpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="357" text="Calling standard library function `memcpy&apos; " type="!"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is true" type="^"/>
+    <traceLine line="630" text="for (;i&lt;NR_OF_SBLINKS;i++) is false" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is false" type="^"/>
+    <traceLine line="1104" text="if (lengthOfbytes==0) is false" type="^"/>
+    <traceLine line="1108" text="if (lengthOfbytes==pdFREERTOS_ERRNO_ENOMEM) is false" type="^"/>
+    <traceLine line="1115" text="if (lengthOfbytes==pdFREERTOS_ERRNO_ENOTCONN) is true" type="^"/>
+    <traceLine line="1120" text="break" type=" "/>
+    <traceLine line="1152" text="if (FreeRTOS_recv(xConnectedSocket, pucRxBuffer, ipconfigTCP_MSS, 0)&lt;0) is true" type="^"/>
+    <traceLine line="1155" text="break" type=" "/>
+    <traceLine line="1165" text="if (pcuRestartFlag!=0) is true" type="^"/>
+    <traceLine line="1168" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>587</lineNo>
+  <column>23</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `pucRxBuffer&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u))" type="^"/>
+    <traceLine line="587" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>591</lineNo>
+  <column>19</column>
+  <checkName>CERT-EXP36-C_b</checkName>
+  <message>Conversion from a void pointer to an object pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>591</lineNo>
+  <column>26</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `sp1&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="591" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>591</lineNo>
+  <column>19</column>
+  <checkName>CERT-ERR33-C_a</checkName>
+  <message>Calling standard library function `memchr&apos; without detecting and handling errors</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="591" text="Calling standard library function `memchr&apos; " type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>592</lineNo>
+  <column>27</column>
+  <checkName>CERT-ARR36-C_a</checkName>
+  <message>Pointer subtraction `sp2-sp1&apos; is between two pointers addressing different buffers</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>592</lineNo>
+  <column>27</column>
+  <checkName>CERT-ARR30-C_j</checkName>
+  <message>The result of pointer arithmetic on possibly null pointer `sp2&apos; could be undefined</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="591" text="Return value of `memchr(sp1, &apos; &apos;, max_uri_len)&apos; could be NULL" type="!"/>
+    <traceLine line="592" text="Pointer arithmetic `sp2-sp1&apos; on possibly null pointer `sp2&apos;" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>593</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `memset&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="593" text="Calling standard library function `memset&apos; " type="!"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is true" type="^"/>
+    <traceLine line="630" text="for (;i&lt;NR_OF_SBLINKS;i++) is false" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="370" text="if (strncmp((unsigned_char *)uri, &quot;/sb_toppage&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="375" text="if (strncmp((unsigned_char *)uri, &quot;/sb_overview&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="380" text="if (strncmp((unsigned_char *)uri, &quot;/sb_led_control&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="385" text="if (strncmp((unsigned_char *)uri, &quot;/sb_update&quot;, 10u)==0) is false" type="^"/>
+    <traceLine line="390" text="if (strncmp((unsigned_char *)uri, &quot;/sb1&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="395" text="if (strncmp((unsigned_char *)uri, &quot;/sb2&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="400" text="if (strncmp((unsigned_char *)uri, &quot;/sb3&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="405" text="if (strncmp((unsigned_char *)uri, &quot;/sb4&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="410" text="if (strncmp((unsigned_char *)uri, &quot;/sb5&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="415" text="if (strncmp((unsigned_char *)uri, &quot;/sb6&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="420" text="if (strncmp((unsigned_char *)uri, &quot;/pcu_update&quot;, 11u)==0) is false" type="^"/>
+    <traceLine line="425" text="if (strncmp((unsigned_char *)uri, &quot;/sb_overview&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="437" text="if (strncmp((unsigned_char *)uri, &quot;/pcu_statistics&quot;, 15u)==0) is false" type="^"/>
+    <traceLine line="442" text="if (strncmp((unsigned_char *)uri, &quot;/favicon.ico&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="448" text="if (strncmp((unsigned_char *)uri, &quot;/get_panelcontroller_data&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="467" text="if (strncmp((unsigned_char *)uri, &quot;/get_port_data_all&quot;, 18u)==0) is true" type="^"/>
+    <traceLine line="470" text="if (sblink_waitForStorageAccess()) is false" type="^"/>
+    <traceLine line="487" text="break" type=" "/>
+    <traceLine line="1152" text="if (FreeRTOS_recv(xConnectedSocket, pucRxBuffer, ipconfigTCP_MSS, 0)&lt;0) is true" type="^"/>
+    <traceLine line="1155" text="break" type=" "/>
+    <traceLine line="1165" text="if (pcuRestartFlag!=0) is true" type="^"/>
+    <traceLine line="1168" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>594</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `memcpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="594" text="Calling standard library function `memcpy&apos; " type="!"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is true" type="^"/>
+    <traceLine line="630" text="for (;i&lt;NR_OF_SBLINKS;i++) is false" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="370" text="if (strncmp((unsigned_char *)uri, &quot;/sb_toppage&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="375" text="if (strncmp((unsigned_char *)uri, &quot;/sb_overview&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="380" text="if (strncmp((unsigned_char *)uri, &quot;/sb_led_control&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="385" text="if (strncmp((unsigned_char *)uri, &quot;/sb_update&quot;, 10u)==0) is false" type="^"/>
+    <traceLine line="390" text="if (strncmp((unsigned_char *)uri, &quot;/sb1&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="395" text="if (strncmp((unsigned_char *)uri, &quot;/sb2&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="400" text="if (strncmp((unsigned_char *)uri, &quot;/sb3&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="405" text="if (strncmp((unsigned_char *)uri, &quot;/sb4&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="410" text="if (strncmp((unsigned_char *)uri, &quot;/sb5&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="415" text="if (strncmp((unsigned_char *)uri, &quot;/sb6&quot;, 4u)==0) is false" type="^"/>
+    <traceLine line="420" text="if (strncmp((unsigned_char *)uri, &quot;/pcu_update&quot;, 11u)==0) is false" type="^"/>
+    <traceLine line="425" text="if (strncmp((unsigned_char *)uri, &quot;/sb_overview&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="437" text="if (strncmp((unsigned_char *)uri, &quot;/pcu_statistics&quot;, 15u)==0) is false" type="^"/>
+    <traceLine line="442" text="if (strncmp((unsigned_char *)uri, &quot;/favicon.ico&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="448" text="if (strncmp((unsigned_char *)uri, &quot;/get_panelcontroller_data&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="467" text="if (strncmp((unsigned_char *)uri, &quot;/get_port_data_all&quot;, 18u)==0) is true" type="^"/>
+    <traceLine line="470" text="if (sblink_waitForStorageAccess()) is false" type="^"/>
+    <traceLine line="487" text="break" type=" "/>
+    <traceLine line="1152" text="if (FreeRTOS_recv(xConnectedSocket, pucRxBuffer, ipconfigTCP_MSS, 0)&lt;0) is true" type="^"/>
+    <traceLine line="1155" text="break" type=" "/>
+    <traceLine line="1165" text="if (pcuRestartFlag!=0) is true" type="^"/>
+    <traceLine line="1168" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>642</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_RELOAD&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>643</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_ENABLE&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>644</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_EWA&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>645</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_DWA&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>696</lineNo>
+  <column>47</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `pucRxBuffer&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="637" text="if (strncmp((unsigned_char *)uri, &quot;/knightrider&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="650" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_rst_m_cycles&quot;, 18u)==0) is false" type="^"/>
+    <traceLine line="663" text="if (strncmp((unsigned_char *)uri, &quot;/fw_upload&quot;, 10u)==0) is true" type="^"/>
+    <traceLine line="693" text="if (imageTagFoundFlag==0) is true" type="^"/>
+    <traceLine line="696" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>705</lineNo>
+  <column>70</column>
+  <checkName>CERT-ARR36-C_a</checkName>
+  <message>Pointer subtraction `(long)pointerFwHeader-(long)pucRxBuffer&apos; is between two pointers addressing different buffers</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>705</lineNo>
+  <column>43</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `long&apos; on `pointerFwHeader&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>705</lineNo>
+  <column>71</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `long&apos; on `pucRxBuffer&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>753</lineNo>
+  <column>48</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `unsigned_int&apos; on `ADDR_FLASH_SECTOR_8&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>910</lineNo>
+  <column>47</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `pucRxBuffer&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="325" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="httpServerConnectionInstance">
+    <traceLine line="325" text="if (pucRxBuffer!=0 &amp;&amp; pageBuffer!=0) is false" type="^"/>
+    <traceLine line="336" text="for (;;) is true" type="^"/>
+    <traceLine line="347" text="if (lengthOfbytes&gt;0) is true" type="^"/>
+    <traceLine line="350" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;GET &quot;, 4)) is true" type="^"/>
+    <traceLine line="360" text="if (strncmp((unsigned_char *)uri, &quot;/home&quot;, 5u)==0) is false" type="^"/>
+    <traceLine line="365" text="if (strncmp((unsigned_char *)uri, &quot;/configuration&quot;, 19u)==0) is true" type="^"/>
+    <traceLine line="587" text="if (!strncmp((unsigned_char *)pucRxBuffer, &quot;POST &quot;, 5u)) is true" type="^"/>
+    <traceLine line="597" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_DISABLED&quot;, 19u)==0) is false" type="^"/>
+    <traceLine line="607" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_AUTO_READ&quot;, 20u)==0) is false" type="^"/>
+    <traceLine line="617" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_ANALYZER_READ&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="627" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_MODE_EMC_TEST_RF_ON&quot;, 25u)==0) is false" type="^"/>
+    <traceLine line="637" text="if (strncmp((unsigned_char *)uri, &quot;/knightrider&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="650" text="if (strncmp((unsigned_char *)uri, &quot;/sbff_rst_m_cycles&quot;, 18u)==0) is false" type="^"/>
+    <traceLine line="663" text="if (strncmp((unsigned_char *)uri, &quot;/fw_upload&quot;, 10u)==0) is false" type="^"/>
+    <traceLine line="771" text="if (memcmp((unsigned_char *)uri, &quot;/sb_update_all&quot;, 14u)==0) is false" type="^"/>
+    <traceLine line="799" text="if (memcmp((unsigned_char *)uri, &quot;/sb_1_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="812" text="if (memcmp((unsigned_char *)uri, &quot;/sb_2_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="825" text="if (memcmp((unsigned_char *)uri, &quot;/sb_3_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="838" text="if (memcmp((unsigned_char *)uri, &quot;/sb_4_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="851" text="if (memcmp((unsigned_char *)uri, &quot;/sb_5_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="864" text="if (memcmp((unsigned_char *)uri, &quot;/sb_6_update&quot;, 12u)==0) is false" type="^"/>
+    <traceLine line="877" text="if (strncmp((unsigned_char *)uri, &quot;/pcu_fw_upload&quot;, 14u)==0) is true" type="^"/>
+    <traceLine line="907" text="if (imageTagFoundFlag==0) is true" type="^"/>
+    <traceLine line="910" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>919</lineNo>
+  <column>70</column>
+  <checkName>CERT-ARR36-C_a</checkName>
+  <message>Pointer subtraction `(long)pointerFwHeader-(long)pucRxBuffer&apos; is between two pointers addressing different buffers</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>919</lineNo>
+  <column>43</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `long&apos; on `pointerFwHeader&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>919</lineNo>
+  <column>71</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `long&apos; on `pucRxBuffer&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>967</lineNo>
+  <column>41</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `unsigned_int&apos; on `ADDR_FLASH_SECTOR_8&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>1181</lineNo>
+  <column>41</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>1181</lineNo>
+  <column>76</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>1181</lineNo>
+  <column>109</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>httpServerConnectionInstance</method>
+  <lineNo>1181</lineNo>
+  <column>149</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1181</lineNo>
+  <column>149</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1181</lineNo>
+  <column>109</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1181</lineNo>
+  <column>76</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1181</lineNo>
+  <column>41</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1772</lineNo>
+  <column>33</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `unsigned_int&apos; on `ADDR_FLASH_SECTOR_8&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_SBfwUpdatePage</method>
+  <lineNo>1782</lineNo>
+  <column>19</column>
+  <checkName>CERT-EXP30-C_b</checkName>
+  <message>More than one arguments for the function call `snprintf_(0, 0, contentWebpage, sbFirmwareData-&gt;imageStatustText, sbFirmwareData-&gt;swrevArr[0], sbFirmwareData-&gt;swrevArr[1], sbFirmwareData-&gt;swrevArr[2], sbFirmwareData-&gt;swrevArr[3], (unsigned_int)(*(unsigned_int *)sbFirmwareData-&gt;imagelengthArr), sbFirmwareData-&gt;swrevArr[0], sbFirmwareData-&gt;swrevArr[1], sbFirmwareData-&gt;swrevArr[2], sbFirmwareData-&gt;swrevArr[3], sblinkHandler[0].sensorbar_SWREV[0], sblinkHandler[0].sensorbar_SWREV[1], sblinkHandler[0].sensorbar_SWREV[2], sblinkHandler[0].sensorbar_SWREV[3], sblink_getSbUpdateStatus(SBLINK_1), sblinkHandler[0].statistic.bl_duration_fwupdate, sblinkHandler[1].sensorbar_SWREV[0], sblinkHandler[1].sensorbar_SWREV[1], sblinkHandler[1].sensorbar_SWREV[2], sblinkHandler[1].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[1].statistic.bl_duration_fwupdate, sblinkHandler[2].sensorbar_SWREV[0], sblinkHandler[2].sensorbar_SWREV[1], sblinkHandler[2].sensorbar_SWREV[2], sblinkHandler[2].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[2].statistic.bl_duration_fwupdate, sblinkHandler[3].sensorbar_SWREV[0], sblinkHandler[3].sensorbar_SWREV[1], sblinkHandler[3].sensorbar_SWREV[2], sblinkHandler[3].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[3].statistic.bl_duration_fwupdate, sblinkHandler[4].sensorbar_SWREV[0], sblinkHandler[4].sensorbar_SWREV[1], sblinkHandler[4].sensorbar_SWREV[2], sblinkHandler[4].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[4].statistic.bl_duration_fwupdate, sblinkHandler[5].sensorbar_SWREV[0], sblinkHandler[5].sensorbar_SWREV[1], sblinkHandler[5].sensorbar_SWREV[2], sblinkHandler[5].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[5].statistic.bl_duration_fwupdate)&apos; are function calls themselves. The evaluation order of these argument calls are unspecified</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_SBfwUpdatePage</method>
+  <lineNo>1782</lineNo>
+  <column>212</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1782</lineNo>
+  <column>212</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_SBfwUpdatePage</method>
+  <lineNo>1790</lineNo>
+  <column>4</column>
+  <checkName>CERT-EXP30-C_b</checkName>
+  <message>More than one arguments for the function call `snprintf_((unsigned_char *)pageBuffer, stringLength, contentWebpage, sbFirmwareData-&gt;imageStatustText, sbFirmwareData-&gt;swrevArr[0], sbFirmwareData-&gt;swrevArr[1], sbFirmwareData-&gt;swrevArr[2], sbFirmwareData-&gt;swrevArr[3], (unsigned_int)(*(unsigned_int *)sbFirmwareData-&gt;imagelengthArr), sbFirmwareData-&gt;swrevArr[0], sbFirmwareData-&gt;swrevArr[1], sbFirmwareData-&gt;swrevArr[2], sbFirmwareData-&gt;swrevArr[3], sblinkHandler[0].sensorbar_SWREV[0], sblinkHandler[0].sensorbar_SWREV[1], sblinkHandler[0].sensorbar_SWREV[2], sblinkHandler[0].sensorbar_SWREV[3], sblink_getSbUpdateStatus(SBLINK_1), sblinkHandler[0].statistic.bl_duration_fwupdate, sblinkHandler[1].sensorbar_SWREV[0], sblinkHandler[1].sensorbar_SWREV[1], sblinkHandler[1].sensorbar_SWREV[2], sblinkHandler[1].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[1].statistic.bl_duration_fwupdate, sblinkHandler[2].sensorbar_SWREV[0], sblinkHandler[2].sensorbar_SWREV[1], sblinkHandler[2].sensorbar_SWREV[2], sblinkHandler[2].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[2].statistic.bl_duration_fwupdate, sblinkHandler[3].sensorbar_SWREV[0], sblinkHandler[3].sensorbar_SWREV[1], sblinkHandler[3].sensorbar_SWREV[2], sblinkHandler[3].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[3].statistic.bl_duration_fwupdate, sblinkHandler[4].sensorbar_SWREV[0], sblinkHandler[4].sensorbar_SWREV[1], sblinkHandler[4].sensorbar_SWREV[2], sblinkHandler[4].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[4].statistic.bl_duration_fwupdate, sblinkHandler[5].sensorbar_SWREV[0], sblinkHandler[5].sensorbar_SWREV[1], sblinkHandler[5].sensorbar_SWREV[2], sblinkHandler[5].sensorbar_SWREV[3], sblink_getSbUpdateStatus(), sblinkHandler[5].statistic.bl_duration_fwupdate)&apos; are function calls themselves. The evaluation order of these argument calls are unspecified</message>
+  <trace/>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_SBfwUpdatePage</method>
+  <lineNo>1790</lineNo>
+  <column>224</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>1790</lineNo>
+  <column>224</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>2064</lineNo>
+  <column>26</column>
+  <checkName>CERT-INT36-C</checkName>
+  <message>Cast performed between a pointer type `unsigned_char *&apos; and an integral type `unsigned_int&apos; on `ADDR_FLASH_SECTOR_8&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_PCUfwUpdatePage</method>
+  <lineNo>2074</lineNo>
+  <column>217</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>2074</lineNo>
+  <column>217</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_PCUfwUpdatePage</method>
+  <lineNo>2075</lineNo>
+  <column>229</column>
+  <checkName>CERT-EXP39-C_d</checkName>
+  <message>A pointer to object type is cast to a pointer to different object type</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method/>
+  <lineNo>2075</lineNo>
+  <column>229</column>
+  <checkName>CERT-EXP36-C_a</checkName>
+  <message>Casting a `unsigned_char *&apos; pointer to a possibly more strictly aligned `unsigned_int *&apos; pointer</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3031</lineNo>
+  <column>14</column>
+  <checkName>CERT-ERR30-C_a</checkName>
+  <message>`errno&apos; is not set to zero before calling errno-setting function `strtol&apos;</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3031" text="CERT-ERR30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3031</lineNo>
+  <column>14</column>
+  <checkName>CERT-ERR30-C_d</checkName>
+  <message>The return value of function `strtol&apos; is not checked</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3031" text="CERT-ERR30-C_d" type="!"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is true" type="^"/>
+    <traceLine line="3041" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3048</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR30-C_a</checkName>
+  <message>`errno&apos; is not set to zero before calling errno-setting function `strtol&apos;</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3048" text="CERT-ERR30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3048</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR30-C_d</checkName>
+  <message>The return value of function `strtol&apos; is not checked</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3048" text="CERT-ERR30-C_d" type="!"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3048</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR34-C_b</checkName>
+  <message>Calling `strtol&apos; without checking for conversion errors</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3048" text="CERT-ERR34-C_b" type="!"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3048</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR33-C_a</checkName>
+  <message>Calling standard library function `strtol&apos; without detecting and handling errors</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3048" text="Calling standard library function `strtol&apos; " type="!"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3059</lineNo>
+  <column>18</column>
+  <checkName>CERT-ERR30-C_a</checkName>
+  <message>`errno&apos; is not set to zero before calling errno-setting function `strtol&apos;</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3059" text="CERT-ERR30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3059</lineNo>
+  <column>18</column>
+  <checkName>CERT-ERR30-C_d</checkName>
+  <message>The return value of function `strtol&apos; is not checked</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3059" text="CERT-ERR30-C_d" type="!"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3059</lineNo>
+  <column>18</column>
+  <checkName>CERT-ERR34-C_b</checkName>
+  <message>Calling `strtol&apos; without checking for conversion errors</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3059" text="CERT-ERR34-C_b" type="!"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3059</lineNo>
+  <column>18</column>
+  <checkName>CERT-ERR33-C_a</checkName>
+  <message>Calling standard library function `strtol&apos; without detecting and handling errors</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3059" text="Calling standard library function `strtol&apos; " type="!"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3070</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR30-C_a</checkName>
+  <message>`errno&apos; is not set to zero before calling errno-setting function `strtol&apos;</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3070" text="CERT-ERR30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_tagPage</method>
+  <lineNo>3070</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR30-C_d</checkName>
+  <message>The return value of function `strtol&apos; is not checked</message>
+  <trace>
+   <traceBlock line="3029" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_tagPage">
+    <traceLine line="3029" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3039" text="if (sbnr&gt;=NR_OF_SBLINKS) is false" type="^"/>
+    <traceLine line="3046" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3057" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3068" text="if (string!=_NULL) is true" type="^"/>
+    <traceLine line="3070" text="CERT-ERR30-C_d" type="!"/>
+    <traceLine line="3080" text="if (row==0) is false" type="^"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>pcuSBlinkInterpreter</method>
+  <lineNo>3165</lineNo>
+  <column>4</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `memset&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="3165" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="pcuSBlinkInterpreter">
+    <traceLine line="3165" text="Calling standard library function `memset&apos; " type="!"/>
+    <traceLine line="3168" text="switch (pcuSBlinkCode)" type="^"/>
+    <traceLine line="3170" text="case 0:" type=" "/>
+    <traceLine line="3171" text="break" type=" "/>
+    <traceLine line="3163" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>pcuSBlinkInterpreter</method>
+  <lineNo>3170</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `strncpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="3168" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="pcuSBlinkInterpreter">
+    <traceLine line="3168" text="switch (pcuSBlinkCode)" type="^"/>
+    <traceLine line="3170" text="case 0:" type=" "/>
+    <traceLine line="3170" text="Calling standard library function `strncpy&apos; " type="!"/>
+    <traceLine line="3171" text="break" type=" "/>
+    <traceLine line="3163" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>pcuSBlinkInterpreter</method>
+  <lineNo>3172</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `strncpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="3168" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="pcuSBlinkInterpreter">
+    <traceLine line="3168" text="switch (pcuSBlinkCode)" type="^"/>
+    <traceLine line="3172" text="case 1:" type=" "/>
+    <traceLine line="3172" text="Calling standard library function `strncpy&apos; " type="!"/>
+    <traceLine line="3173" text="break" type=" "/>
+    <traceLine line="3163" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>pcuSBlinkInterpreter</method>
+  <lineNo>3174</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `strncpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="3168" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="pcuSBlinkInterpreter">
+    <traceLine line="3168" text="switch (pcuSBlinkCode)" type="^"/>
+    <traceLine line="3174" text="case 2:" type=" "/>
+    <traceLine line="3174" text="Calling standard library function `strncpy&apos; " type="!"/>
+    <traceLine line="3175" text="break" type=" "/>
+    <traceLine line="3163" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>pcuSBlinkInterpreter</method>
+  <lineNo>3176</lineNo>
+  <column>16</column>
+  <checkName>CERT-ERR33-C_c</checkName>
+  <message>Calling standard library function `strncpy&apos; without detecting and handling errors or casting explicitly to `void&apos;</message>
+  <trace>
+   <traceBlock line="3168" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="pcuSBlinkInterpreter">
+    <traceLine line="3168" text="switch (pcuSBlinkCode)" type="^"/>
+    <traceLine line="3176" text="default:" type=" "/>
+    <traceLine line="3176" text="Calling standard library function `strncpy&apos; " type="!"/>
+    <traceLine line="3163" text="fn_return" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3221</lineNo>
+  <column>18</column>
+  <checkName>CERT-STR32-C</checkName>
+  <message>String `zeroUID&apos; may not be null-terminated</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is true" type="^"/>
+    <traceLine line="3221" text="if (memcmp(zeroUID, (pTag+11+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+i*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA), UID_SIZE)!=0)" type="^"/>
+    <traceLine line="3221" text="CERT-STR32-C" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3221</lineNo>
+  <column>44</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is true" type="^"/>
+    <traceLine line="3221" text="if (memcmp(zeroUID, (pTag+11+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+i*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA), UID_SIZE)!=0)" type="^"/>
+    <traceLine line="3221" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3221</lineNo>
+  <column>44</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is true" type="^"/>
+    <traceLine line="3221" text="if (memcmp(zeroUID, (pTag+11+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+i*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA), UID_SIZE)!=0)" type="^"/>
+    <traceLine line="3221" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3221</lineNo>
+  <column>35</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+11+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is true" type="^"/>
+    <traceLine line="3221" text="if (memcmp(zeroUID, (pTag+11+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+i*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA), UID_SIZE)!=0)" type="^"/>
+    <traceLine line="3221" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>346</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>370</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>384</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>346</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>337</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>270</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>294</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>308</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>270</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>261</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>195</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>219</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>233</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>195</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>186</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>120</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>144</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>158</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>120</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>111</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+7+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>45</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>69</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>83</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>45</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3245</lineNo>
+  <column>36</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+8+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3245" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3246</lineNo>
+  <column>88</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `1+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3246" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3246</lineNo>
+  <column>64</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `1+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3246" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3246</lineNo>
+  <column>40</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `1+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3246" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>472</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>538</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>552</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>472</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>495</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+1*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>363</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>429</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>443</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>363</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>386</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+1*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>254</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>320</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>334</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>254</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>277</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+1*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>145</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+7+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>211</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>225</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>145</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+7+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>168</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+7+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+1*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>45</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>45</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>36</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+8+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>102</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>116</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>45</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>36</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+8+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3247</lineNo>
+  <column>59</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+8+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+1*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3247" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3248</lineNo>
+  <column>88</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `2+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3248" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3248</lineNo>
+  <column>64</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `2+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3248" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3248</lineNo>
+  <column>40</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `2+rowOffset&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3248" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>472</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>538</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>552</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>481</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>472</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>495</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+4+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+2*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>363</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>429</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>443</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>372</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>363</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>386</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+5+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+2*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>254</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>320</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>334</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `rowOffset*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>263</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>254</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>277</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `pTag+6+socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)+2*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)*TAGS_PER_ANTENNA&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>Unsigned operation `socketnr*(UID_SIZE+PAYLOAD_SIZE+RSSI_SIZE+ANT_SIZE+ERR_SIZE)&apos; may wrap</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>fill_table</method>
+  <lineNo>3249</lineNo>
+  <column>154</column>
+  <checkName>CERT-INT30-C_a</checkName>
+  <message>The maximum number of messages was reached for this check</message>
+  <trace>
+   <traceBlock line="3219" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="fill_table">
+    <traceLine line="3219" text="for (;i&lt;ANTENNAS_PER_SENSORBAR;i++) is false" type="^"/>
+    <traceLine line="3231" text="if (antennarow!=0) is true" type="^"/>
+    <traceLine line="3249" text="CERT-INT30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_jsonPortData</method>
+  <lineNo>3725</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR30-C_a</checkName>
+  <message>`errno&apos; is not set to zero before calling errno-setting function `strtol&apos;</message>
+  <trace>
+   <traceBlock line="3725" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_jsonPortData">
+    <traceLine line="3725" text="CERT-ERR30-C_a" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_jsonPortData</method>
+  <lineNo>3725</lineNo>
+  <column>13</column>
+  <checkName>CERT-ERR30-C_d</checkName>
+  <message>The return value of function `strtol&apos; is not checked</message>
+  <trace>
+   <traceBlock line="3725" file="d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c" method="http_jsonPortData">
+    <traceLine line="3725" text="CERT-ERR30-C_d" type="!"/>
+    <traceLine line="3728" text="if (nsPort&lt;=TOTAL_NR_OF_RFID_PORT &amp;&amp; nsPort&gt;0) is false" type="^"/>
+    <traceLine line="3794" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\src\pcu_http.c</file>
+  <method>http_redirectSettings</method>
+  <lineNo>4222</lineNo>
+  <column>17</column>
+  <checkName>RED-unused-var-all</checkName>
+  <message>Variable `ptr&apos; is unused on all paths</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8859</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY_Pos&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8860</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY_Msk&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8861</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10592</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY_Pos&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10593</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY_Msk&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10594</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+</source>

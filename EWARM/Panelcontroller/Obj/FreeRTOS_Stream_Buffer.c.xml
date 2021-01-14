@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source name="FreeRTOS_Stream_Buffer.c" location="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp" is_link="no">
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\FreeRTOS_Stream_Buffer.c</file>
+  <method>uxStreamBufferAdd</method>
+  <lineNo>89</lineNo>
+  <column>42</column>
+  <checkName>CERT-ARR30-C_g</checkName>
+  <message>Array pointer formed by `(pxBuffer-&gt;ucArray+uxNextHead)&apos; could be out-of-bound</message>
+  <trace>
+   <traceBlock line="54" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\FreeRTOS_Stream_Buffer.c" method="uxStreamBufferAdd">
+    <traceLine line="54" text="if (uxSpace&gt;uxOffset) is true" type="^"/>
+    <traceLine line="67" text="if (uxCount!=0) is true" type="^"/>
+    <traceLine line="71" text="if (uxOffset!=0) is false" type="^"/>
+    <traceLine line="81" text="if (pucData!=_NULL) is true" type="^"/>
+    <traceLine line="89" text="CERT-ARR30-C_g" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>155</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RDP_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>156</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_KEY1&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>157</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_KEY2&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>158</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_OPT_KEY1&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h</file>
+  <method/>
+  <lineNo>159</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `FLASH_OPT_KEY2&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\FreeRTOS_Stream_Buffer.c</file>
+  <method>uxStreamBufferGet</method>
+  <lineNo>171</lineNo>
+  <column>39</column>
+  <checkName>CERT-ARR30-C_g</checkName>
+  <message>Array pointer formed by `pxBuffer-&gt;ucArray+uxNextTail&apos; could be out-of-bound</message>
+  <trace>
+   <traceBlock line="137" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\FreeRTOS_Stream_Buffer.c" method="uxStreamBufferGet">
+    <traceLine line="137" text="if (uxSize&gt;uxOffset) is false" type="^"/>
+    <traceLine line="149" text="if (uxCount&gt;0) is true" type="^"/>
+    <traceLine line="153" text="if (uxOffset!=0) is false" type="^"/>
+    <traceLine line="162" text="if (pucData!=_NULL) is true" type="^"/>
+    <traceLine line="171" text="CERT-ARR30-C_g" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h</file>
+  <method>FreeRTOS_round_up</method>
+  <lineNo>182</lineNo>
+  <column>104</column>
+  <checkName>ATH-div-0-unchk-param,CERT-INT33-C_h</checkName>
+  <message>Parameter `d&apos; is not checked against 0 before it is used as a divisor</message>
+  <trace>
+   <traceBlock line="182" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h" method="FreeRTOS_round_up">
+    <traceLine line="182" text="non_float_cast_divide" type="!"/>
+    <traceLine line="182" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h</file>
+  <method>FreeRTOS_round_down</method>
+  <lineNo>183</lineNo>
+  <column>91</column>
+  <checkName>ATH-div-0-unchk-param,CERT-INT33-C_h</checkName>
+  <message>Parameter `d&apos; is not checked against 0 before it is used as a divisor</message>
+  <trace>
+   <traceBlock line="183" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_IP.h" method="FreeRTOS_round_down">
+    <traceLine line="183" text="non_float_cast_divide" type="!"/>
+    <traceLine line="183" text="return" type=" "/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>Medium</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method/>
+  <lineNo>193</lineNo>
+  <column>15</column>
+  <checkName>CERT-EXP46-C</checkName>
+  <message>Bitwise operator applied to boolean expression `(uxLeft&lt;uxTail)&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method/>
+  <lineNo>193</lineNo>
+  <column>38</column>
+  <checkName>CERT-EXP46-C</checkName>
+  <message>Bitwise operator applied to boolean expression `(uxRight&lt;uxTail)&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>Low</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h</file>
+  <method>uxStreamBufferGetPtr</method>
+  <lineNo>225</lineNo>
+  <column>32</column>
+  <checkName>CERT-ARR30-C_g</checkName>
+  <message>Array pointer formed by `pxBuffer-&gt;ucArray+uxNextTail&apos; could be out-of-bound</message>
+  <trace>
+   <traceBlock line="225" file="d:\github\netscale_72_sw_panelcontroller\middlewares\third_party\freertos-plus-tcp\include\FreeRTOS_Stream_Buffer.h" method="uxStreamBufferGetPtr">
+    <traceLine line="225" text="CERT-ARR30-C_g" type="!"/>
+   </traceBlock>
+  </trace>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>642</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_RELOAD&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>643</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_ENABLE&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>644</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_EWA&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\stm32f4xx_hal_driver\inc\legacy\stm32_hal_legacy.h</file>
+  <method/>
+  <lineNo>645</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `KR_KEY_DWA&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8859</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY_Pos&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8860</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY_Msk&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>8861</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `IWDG_KR_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10592</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY_Pos&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10593</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY_Msk&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+ <warning>
+ <file>d:\github\netscale_72_sw_panelcontroller\drivers\cmsis\device\st\stm32f4xx\include\stm32f412vx.h</file>
+  <method/>
+  <lineNo>10594</lineNo>
+  <column>9</column>
+  <checkName>CERT-MSC41-C_b</checkName>
+  <message>Hard code sensitive information for `RTC_WPR_KEY&apos;</message>
+  <trace/>
+  <rules></rules>
+  <severity>High</severity>
+ </warning>
+</source>
