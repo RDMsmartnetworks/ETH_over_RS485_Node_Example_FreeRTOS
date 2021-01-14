@@ -1,2 +1,0 @@
-Ohne CLK Stretch IRQ Triggering
-Mit CLK Stretch kein IRQ Triggering

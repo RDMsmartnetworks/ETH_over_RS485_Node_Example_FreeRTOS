@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <StLinkDriver>
+        <stlinkResetStyle>0</stlinkResetStyle>
+        <stlinkResetStrategy>2</stlinkResetStrategy>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </StLinkDriver>
+    <DebugChecksum>
+        <Checksum>1718154176</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CodeCoverage>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+        <HideCovered>0</HideCovered>
+    </CodeCoverage>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+        <InstrCount>0</InstrCount>
+    </Disassembly>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <InterruptLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </InterruptLog>
+    <DataLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+    </DataLog>
+    <Interrupts>
+        <Enabled>1</Enabled>
+    </Interrupts>
+    <MemConfig>
+        <Base>1</Base>
+        <Manual>0</Manual>
+        <Ddf>1</Ddf>
+        <TypeViol>0</TypeViol>
+        <Stop>1</Stop>
+    </MemConfig>
+    <Simulator>
+        <Freq>10000000</Freq>
+        <FreqHi>0</FreqHi>
+        <MultiCoreRunAll>1</MultiCoreRunAll>
+    </Simulator>
+    <Registers>
+        <regBase0>TIM3_ARR 10</regBase0>
+        <regBase1>TIM7_CNT 10</regBase1>
+        <regBase2>TIM6_ARR 10</regBase2>
+        <regBase3>TIM3_CNT 10</regBase3>
+        <regBase4>TIM7_ARR 10</regBase4>
+    </Registers>
+    <struct_types>
+        <Fmt0>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameCounter	3	0</Fmt0>
+        <Fmt1>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameCurrentFifoSize	3	0</Fmt1>
+        <Fmt2>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameFifoFullCounter	3	0</Fmt2>
+        <Fmt3>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameHeadIndex	3	0</Fmt3>
+        <Fmt4>BUS_UART_INPUT_FIFO_HANDLE_t-inputFramePeakFifoSize	3	0</Fmt4>
+        <Fmt5>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameProcessingNr	3	0</Fmt5>
+        <Fmt6>BUS_UART_INPUT_FIFO_HANDLE_t-inputFrameTailIndex	3	0</Fmt6>
+        <Fmt7>I2C_HandleTypeDef-Devaddress	4	0</Fmt7>
+        <Fmt8>I2C_HandleTypeDef-ErrorCode	4	0</Fmt8>
+        <Fmt9>I2C_TypeDef-CR1	4	0</Fmt9>
+        <Fmt10>I2C_TypeDef-CR2	4	0</Fmt10>
+        <Fmt11>UART_HandleTypeDef-ErrorCode	4	0</Fmt11>
+        <Fmt12>USART_TypeDef-BRR	3	0</Fmt12>
+        <Fmt13>USART_TypeDef-CR1	1	0</Fmt13>
+    </struct_types>
+    <array_types>
+        <Fmt0>uint16_t[128]	3	0</Fmt0>
+        <Fmt1>uint8_t[1024]	5	0</Fmt1>
+        <Fmt2>uint8_t[128]	4	0</Fmt2>
+        <Fmt3>uint8_t[15]	4	0</Fmt3>
+        <Fmt4>uint8_t[4]	4	0</Fmt4>
+        <Fmt5>uint8_t[5]	4	0</Fmt5>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}1:((uint8_t)0x80 &lt;&lt; (uint8_t)0) &amp; (uint8_t)0x80	4	0</Fmt0>
+        <Fmt1>{W}1:((uint8_t)features[3] &lt;&lt; (uint8_t)0) &amp; (uint8_t)0x80	4	0</Fmt1>
+        <Fmt2>{W}1:(uint32_t)(*(uint32_t*)(0x08004000))	4	0</Fmt2>
+        <Fmt3>{W}1:(uint32_t)(*(uint32_t*)(0x0800400E))	4	0</Fmt3>
+        <Fmt4>{W}1:(uint32_t)(*(uint32_t*)(0x0800400F))	4	0</Fmt4>
+        <Fmt5>{W}1:(uint32_t)(*(uint32_t*)(0x08004010))	4	0</Fmt5>
+        <Fmt6>{W}1:(uint32_t)(*(uint32_t*)(0x08004015))	4	0</Fmt6>
+        <Fmt7>{W}1:(uint32_t)(*(uint32_t*)(0x08004016))	5	0</Fmt7>
+        <Fmt8>{W}1:(uint32_t)(*(uint32_t*)(fwVersInstalled))	4	0</Fmt8>
+        <Fmt9>{W}1:(uint32_t)(*(uint32_t*)(swrev))	4	0</Fmt9>
+        <Fmt10>{W}1:(uint32_t)(*(uint32_t*)firmwarePCU.swrevArr)	4	0</Fmt10>
+        <Fmt11>{W}1:(uint32_t)*(pointer64b-5)	4	0</Fmt11>
+        <Fmt12>{W}1:(uint32_t)*(pointer64b-6)	4	0</Fmt12>
+        <Fmt13>{W}1:(uint8_t)features[3] &lt;&lt; (uint8_t)0	1	0</Fmt13>
+        <Fmt14>{W}1:(uint8_t)features[3] &lt;&lt; (uint8_t)0 &amp; 0x80	4	0</Fmt14>
+        <Fmt15>{W}1:(uint8_t)features[3] &lt;&lt; (uint8_t)2 &amp; 0x80	4	0</Fmt15>
+        <Fmt16>{W}1:(uint8_t)sblink	3	0</Fmt16>
+        <Fmt17>{W}1:*((uint32_t*)dataPointer)	4	0</Fmt17>
+        <Fmt18>{W}1:*((uint32_t*)dataPointer-1)	4	0</Fmt18>
+        <Fmt19>{W}1:*dataPointer+1	4	0</Fmt19>
+        <Fmt20>{W}1:*imagelength	4	0</Fmt20>
+        <Fmt21>{W}1:CRC32	4	0</Fmt21>
+        <Fmt22>{W}1:antennaNr	3	0</Fmt22>
+        <Fmt23>{W}1:cmd-&gt;dataLength	3	0</Fmt23>
+        <Fmt24>{W}1:crc32	4	0</Fmt24>
+        <Fmt25>{W}1:crcInputWord	4	0</Fmt25>
+        <Fmt26>{W}1:data32bLowWord	4	0</Fmt26>
+        <Fmt27>{W}1:features[3]	4	0</Fmt27>
+        <Fmt28>{W}1:features[3] &lt;&lt; (uint8_t)0	1	0</Fmt28>
+        <Fmt29>{W}1:features[3] &lt;&lt; 0	1	0</Fmt29>
+        <Fmt30>{W}1:features[3] &lt;&lt; 1	1	0</Fmt30>
+        <Fmt31>{W}1:flashAddress	4	0</Fmt31>
+        <Fmt32>{W}1:hcrc-&gt;Instance-&gt;DR	4	0</Fmt32>
+        <Fmt33>{W}1:imagebytesleft	4	0</Fmt33>
+        <Fmt34>{W}1:logicalPortNumber	3	0</Fmt34>
+        <Fmt35>{W}1:macAddress64b	4	0</Fmt35>
+        <Fmt36>{W}1:macAddress64b&lt;&lt;32	4	0</Fmt36>
+        <Fmt37>{W}1:macAddress64b&gt;&gt;32	4	0</Fmt37>
+        <Fmt38>{W}1:physicalPortNumber	3	0</Fmt38>
+        <Fmt39>{W}1:pxDNSMessageHeader	4	0</Fmt39>
+        <Fmt40>{W}1:regAdrCableInfo	4	0</Fmt40>
+        <Fmt41>{W}1:regAdrSensorInfo	4	0</Fmt41>
+        <Fmt42>{W}1:stringindex	3	0</Fmt42>
+        <Fmt43>{W}1:temp	4	0</Fmt43>
+        <Fmt44>{W}42:*fwOffset	4	0</Fmt44>
+        <Fmt45>{W}42:ack_error	3	0</Fmt45>
+        <Fmt46>{W}42:cnter	3	0</Fmt46>
+        <Fmt47>{W}42:counter	3	0</Fmt47>
+        <Fmt48>{W}42:crc32	4	0</Fmt48>
+        <Fmt49>{W}42:error1	3	0</Fmt49>
+        <Fmt50>{W}42:error2	3	0</Fmt50>
+        <Fmt51>{W}42:error3	3	0</Fmt51>
+        <Fmt52>{W}42:error4	3	0</Fmt52>
+        <Fmt53>{W}42:error5	3	0</Fmt53>
+        <Fmt54>{W}42:error7	3	0</Fmt54>
+        <Fmt55>{W}42:error8	3	0</Fmt55>
+        <Fmt56>{W}42:flashAddress	4	0</Fmt56>
+        <Fmt57>{W}42:fwBlockSize	4	0</Fmt57>
+        <Fmt58>{W}42:fwOffset	4	0</Fmt58>
+        <Fmt59>{W}42:fwSize	3	0</Fmt59>
+        <Fmt60>{W}42:portNr	3	0</Fmt60>
+        <Fmt61>{W}42:portNrMaster	3	0</Fmt61>
+        <Fmt62>{W}42:portNrSlave	3	0</Fmt62>
+        <Fmt63>{W}42:rfidMaster.port	3	0</Fmt63>
+        <Fmt64>{W}42:rfidSlave.port	3	0</Fmt64>
+        <Fmt65>{W}42:scanCounterMaster	3	0</Fmt65>
+        <Fmt66>{W}42:scanCounterSlave	3	0</Fmt66>
+        <Fmt67>{W}42:temp	4	0</Fmt67>
+        <Fmt68>{W}42:tx_error	3	0</Fmt68>
+    </watch_formats>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\sb.c}.0.1" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
+    <Aliases>
+        <A0>_ "C:\Users\nkorn\Documents\GitHub\Netscale72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c" "D:\GitHub\Netscale_72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c"</A0>
+        <A1>_ "C:\Users\nkorn\Documents\GitHub\Netscale72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c" "D:\GitHub\Netscale_72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c"</A1>
+        <A2>_ "C:\Users\nkorn\Documents\GitHub\Netscale72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c" "D:\GitHub\Netscale_72_SW_Panelcontroller\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c"</A2>
+        <A3>_ "C:\Users\nkorn\Documents\GitHub\Netscale72_SW_Panelcontroller\EWARM\startup_stm32f412vx.s" "D:\GitHub\Netscale_72_SW_Panelcontroller\EWARM\startup_stm32f412vx.s"</A3>
+        <A4>_ "C:\Users\nkorn\OneDrive - Reichle &amp; De-Massari Holding AG\Desktop\Netscale_72_SW_Panelcontroller\Src\stm32f4xx_it.c" "D:\GitHub\Netscale_72_SW_Panelcontroller\Src\stm32f4xx_it.c"</A4>
+        <Count>5</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+</settings>
