@@ -1,0 +1,2 @@
+# ETH_on_RS485_Node_Example_FreeRTOS
+This a an example software code and hardware schematic package for using a custom made STM32F412VE Board connected to a RS485 bus communicating with ethernet style frames. To get the ethernet frames to it's desired medium the ethernet to rs485 converter is needed, which is also provided for free under following repository: https://github.com/RDMsmartnetworks/ETH_to_RS485_Converter_Baremetal
