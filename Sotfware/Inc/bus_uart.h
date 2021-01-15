@@ -60,7 +60,7 @@
 #define UART_PIN_BUS_CTS               GPIO_PIN_3
 #define UART_PIN_BUS_BE                GPIO_PIN_2
 #define UART_GPIO                      GPIOD
-#define UART_BUS_BAUDRATE              ( 1500000u )
+#define UART_BUS_BAUDRATE              ( 6000000u )
 
 // Ethernet
 #define MACDSTFIELD              ( 8 )
